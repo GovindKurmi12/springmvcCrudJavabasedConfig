@@ -1,5 +1,7 @@
 package com.gk.spring.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,5 +16,10 @@ public class EmployeeService {
 
 	public void addStudent(Employee employee) {
 		employeeRepo.addEmployee(employee);
+	}
+
+	public List<Employee> getAllEmployee() {
+		return employeeRepo.getAllEmployee();
+
 	}
 }
